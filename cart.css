@@ -1,0 +1,285 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    background-color: black;
+    align-items: center;
+}
+nav div{
+    width: 30%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+li{
+    list-style-type: none;
+}
+nav #left img{
+    width: 40%;
+}
+nav #cent #cont{
+    display: flex;
+
+}
+nav #cent #cont a{
+    padding: 1rem 3rem;
+}
+nav #right{
+    display: flex;
+    gap: 2rem;
+    justify-content:end;
+    align-items: center;
+}
+nav #right button{
+    width: 20%;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: yellow;
+}
+nav #right a{
+    color: black;
+}
+nav span{
+    color: white;
+}
+#male-menu{
+    margin-top: 24px;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: green;
+    width: 100%;
+    display: none;
+    padding: 0px;
+    z-index: 99;
+    
+
+}
+#male-menu li{
+    border-bottom: 2px solid red;
+}
+#male{
+    position: relative;
+}
+/* #male:hover #male-menu{
+    display: block;
+} */
+#female-menu{
+    margin-top: 24px;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: green;
+    width: 100%;
+    display: none;
+    padding: 0px;
+    z-index: 99;
+    
+
+}
+#female-menu li{
+    border-bottom: 2px solid red;
+}
+#female{
+    position: relative;
+}
+#mens{
+    margin-top: 10px;
+    
+}
+#shirt{
+        /* background-color: red; */
+
+    width: 80%;
+    margin: auto;
+   
+}
+#tshirt{
+    
+    width: 80%;
+    margin: auto;
+}
+#pant{
+    
+    width: 80%;
+    margin: auto; 
+}
+#saree{
+       
+    width: 80%;
+    margin: auto; 
+}
+#dress{
+       
+    width: 80%;
+    margin: auto; 
+}
+#kurti{
+    width: 80%;
+    margin: auto;
+}
+
+#mens  h1{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 5px 5px 7px red;
+
+}
+#mens hr{
+    padding: 5px;
+    background-image: linear-gradient(red,yellow);
+    border-radius: 40px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+.row div{
+    border: 5px solid purple;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 37px  green;
+}
+.row div div{
+    box-shadow: none;
+}
+/* .row div{
+    width: 30%;
+    border: 2px solid black;
+} */
+.row div img{
+    width: 100%;
+    height: 400px;
+    border-radius: 30px;
+    /* border: 2px solid black; */
+}
+.row div h3{
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+}
+.row div:hover{
+    padding: 1rem;
+    border: 2px solid gray;
+    background-image: linear-gradient(red,black);
+    border-radius: 30px;
+    color:white;
+    
+}
+
+.row div div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    border: none;
+    
+    
+}
+.row div div:hover{
+    padding:0px;
+    border: none;
+    background-image: none;
+    border-radius: none;
+    color: none;
+}
+
+.row div h4{
+    margin-bottom: 0.5rem;
+}
+.row div button{
+    width: 100%;
+    height: 3rem;
+    background-color: yellow;
+    border: none;
+    margin-bottom: 0.5rem;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+span{
+    margin-right: 10px;
+}
+#cart{
+    background-color: black;
+    color: white;
+    width: 30%;
+    height: 100vh;
+    position:fixed;
+    top: 0%; right: -100%;
+    z-index: 999;
+    transition: 2s;
+    overflow-y:scroll ;
+}
+#cart-title h4{
+    text-align: right;    
+}
+#cart-title h2{
+    text-align: center;
+}
+.cart-item{
+    display:grid;
+    grid-template-columns: 20% 50% 25%;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.cart-item div img{
+    width: 70%;
+}
+.fa-trash{
+    color: red;
+    margin-left: 0.5rem;
+}
+/* #cart-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    height: 70px;
+    align-items: center;
+    font-size: 20px;
+}
+#cart-footer button{
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 25px;
+    background-color:green;
+    color: white;
+} */
+
+#cart-footer{
+    margin-top: 20px;
+    margin: 10px;
+}
+#cart-footer h1{
+
+    font-size: 10px
+}
+#cart-footer button{
+    
+    width: 95%;
+    height: 50px;
+    background-color: green;
+}
